@@ -23,27 +23,60 @@
     </div>
     <!-- Buttons for dates end-->
     <!-- Work List & Personal List cards start-->
-    <div class="row">
-        <div class="col-sm-6">
-            <div class="card">
-                <div class="card-body">
-                    <h5 class="card-title">Work To-Do List</h5>
-                    <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
-                    <a href="#" class="btn btn-primary">Go somewhere</a>
-                </div>
+    <p>
+        <a class="btn btn-primary" data-bs-toggle="collapse" href="#multiCollapseExample1" role="button" aria-expanded="false" aria-controls="multiCollapseExample1">Work To-Do List</a>
+        <button class="btn btn-primary" type="button" data-bs-toggle="collapse" data-bs-target="#multiCollapseExample2" aria-expanded="false" aria-controls="multiCollapseExample2">Personal To-Do List</button>
+        <button class="btn btn-primary" type="button" data-bs-toggle="collapse" data-bs-target=".multi-collapse" aria-expanded="false" aria-controls="multiCollapseExample1 multiCollapseExample2">All To-Do Lists</button>
+      </p>
+     
+      <div class="row">
+        <div class="col">
+          <div class="collapse multi-collapse" id="multiCollapseExample1">
+            <div class="card card-body">
+            <h1>Work</h1>
+              <li>task</li>
+              <li>task</li>
+              <li>task</li>
+              <li>task</li>
+              <li>task</li>
+              <li>task</li>
             </div>
+          </div>
         </div>
-        <div class="col-sm-6">
-            <div class="card">
-                <div class="card-body">
-                    <h5 class="card-title">Personal To-Do List</h5>
-                    <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
-                    <a href="#" class="btn btn-primary">Go somewhere</a>
-                </div>
+        <div class="col">
+          <div class="collapse multi-collapse" id="multiCollapseExample2">
+            <div class="card card-body">
+                <h1>Personal</h1>
+                <li>task</li>
+                <li>task</li>
+                <li>task</li>
+                <li>task</li>
+                <li>task</li>
+                <li>task</li>
             </div>
+          </div>
         </div>
-    </div>
+      </div>
+    
     <!-- Work List & Personal List cards end-->
+
+    <!--Completed Tasks section starts here-->
+    <div class="card text-center">
+        
+        <div class="card-body">
+          <h5 class="card-title">Completed Tasks</h5>
+          <p class="card-text">
+            <li> Task Done</li>
+            <li> Task Done</li>
+            <li> Task Done</li>
+            <li> Task Done</li>
+            <li> Task Done</li>
+          </p>
+      
+        </div>
+        
+      </div>
+      <!--Completed Tasks section ends here-->
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2"
